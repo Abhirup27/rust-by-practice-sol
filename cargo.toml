@@ -1,0 +1,20 @@
+[package]
+name = "rust_practice"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "1"
+path = "variables/bind_&_mut/1.rs"
+
+[[bin]]
+name = "2"
+path = "variables/bind_&_mut/2.rs"
+
+[[bin]]
+name = "8_destructuring"
+path = "variables/8_destructuring.rs"
+
+[[bin]]
+name = "9_destruct_assignments"
+path = "variables/9_destruct_assignments.rs"

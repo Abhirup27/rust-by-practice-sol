@@ -1,0 +1,30 @@
+[[configs]]
+name = "run_1_rs"
+program = "cargo"
+args = ["run", "--bin", "1"]
+cwd = "${workspace}"
+
+[[configs]]
+name = "run_2_rs"
+program = "cargo"
+args = ["run", "--bin", "2"]
+cwd = "${workspace}"
+
+[[configs]]
+name = "run_8_destructuring"
+program = "cargo"
+args = ["run", "--bin", "8_destructuring"]
+cwd = "${workspace}"
+
+[[configs]]
+name = "run_9_destruct_assignments"
+program = "cargo"
+args = ["run", "--bin", "9_destruct_assignments"]
+cwd = "${workspace}"
+
+[configs.env]
+RUST_BACKTRACE = "1"
+
+[configs.prelaunch]
+program = "cargo"
+args = ["build"]
